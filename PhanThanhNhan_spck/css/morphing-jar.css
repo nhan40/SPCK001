@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.product-details {
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4b6279;
+    margin-bottom: 1rem;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+.card-info {
+    background-color: #f8f9fa;
+    border-left: 4px solid #B588F7;
+    margin-bottom: 1.5rem;
+}
+
+.card-info p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #343a40;
+}
+
+.add-to-cart {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    background-color: lightseagreen;
+}
+.add-to-cart1 {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    background-color: orange;
+}
+.adm:hover {
+    background-color: red;
+}
+
+
+.cards-img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .cards-img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}

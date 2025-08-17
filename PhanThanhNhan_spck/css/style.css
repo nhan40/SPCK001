@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.cardcollect-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    color: #343a40;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.search-input {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.btn-outline-success,
+.btn-outline-danger {
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+}
+
+
+
+
+/* Carousel */
+.carousel-cardcollect {
+    margin-bottom: 3rem;
+}
+
+.carousel-inner {
+    max-height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 600px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Cards */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #343a40;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Footer */
+footer {
+    background-color: #e9ecef;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 0.5rem;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+footer p,
+footer a {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .carousel-inner {
+        max-height: 400px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .cardcollect-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .carousel-inner {
+        max-height: 300px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
