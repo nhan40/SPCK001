@@ -1,0 +1,242 @@
+[
+    {
+        "id": "yugioh1",
+        "title": "Morphing Jar",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "150,000",
+        "image": "./images/yugioh1.jpg",
+        "condition": "New",
+        "stock": 7,
+        "sold": 3
+    },
+    {
+        "id": "yugioh2",
+        "title": "Blue-Eyes White Dragon",
+        "content": "A legendary dragon that is a powerful engine of destruction.",
+        "money": "200,000",
+        "image": "./images/yugioh2.jpg",
+        "condition": "New",
+        "stock": 2,
+        "sold": 8
+    },
+    {
+        "id": "yugioh3",
+        "title": "Helios Pterosaur",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "100,000",
+        "image": "./images/yugioh3.jpg",
+        "condition": "New",
+        "stock": 9,
+        "sold": 1
+    },
+    {
+        "id": "yugioh4",
+        "title": "Sacred Phoenix Of Nephthys",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "100,000",
+        "image": "./images/yugioh4.jpg",
+        "condition": "New",
+        "stock": 4,
+        "sold": 6
+    },
+    {
+        "id": "yugioh5",
+        "title": "Amun, King Of The Gods",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "50,000",
+        "image": "./images/yugioh5.jpg",
+        "condition": "New",
+        "stock": 10,
+        "sold": 2
+    },
+    {
+        "id": "yugioh6",
+        "title": "Gagaga Clerk",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "200,000",
+        "image": "./images/yugioh6.jpg",
+        "condition": "New",
+        "stock": 5,
+        "sold": 9
+    },
+    {
+        "id": "yugioh7",
+        "title": "Blue-Eyes Ultimate Toon Dragon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "200,000",
+        "image": "./images/yugioh7.jpg",
+        "condition": "New",
+        "stock": 1,
+        "sold": 7
+    },
+    {
+        "id": "yugioh8",
+        "title": "Blue-Eyes Ultimate Toon Dragon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "200,000",
+        "image": "./images/yugioh8.jpg",
+        "condition": "New",
+        "stock": 6,
+        "sold": 5
+    },
+    {
+        "id": "yugioh9",
+        "title": "The Dark Magicians",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "300,000",
+        "image": "./images/yugioh9.jpg",
+        "condition": "New",
+        "stock": 8,
+        "sold": 4
+    },
+    {
+        "id": "yugioh10",
+        "title": "Legendary Magician Of Dark",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "120,000",
+        "image": "./images/yugioh10.jpg",
+        "condition": "New",
+        "stock": 3,
+        "sold": 10
+    },
+    {
+        "id": "yugioh11",
+        "title": "Master Of Magicians",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "175,000",
+        "image": "./images/yugioh11.jpg",
+        "condition": "New",
+        "stock": 2,
+        "sold": 8
+    },
+    {
+        "id": "yugioh12",
+        "title": "Magician Of Dark Arkanes",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "300,000",
+        "image": "./images/yugioh12.jpg",
+        "condition": "New",
+        "stock": 7,
+        "sold": 1
+    },
+    {
+        "id": "yugioh13",
+        "title": "Slifer The Sky Dragon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "200,000",
+        "image": "./images/yugioh13.jpg",
+        "condition": "New",
+        "stock": 9,
+        "sold": 6
+    },
+    {
+        "id": "yugioh14",
+        "title": "Number O: Neo Galaxy Shooting Star Dragon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "75,000",
+        "image": "./images/yugioh14.jpg",
+        "condition": "New",
+        "stock": 5,
+        "sold": 3
+    },
+    {
+        "id": "yugioh15",
+        "title": "Helios Pterosaur",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "175,000",
+        "image": "./images/yugioh15.jpg",
+        "condition": "New",
+        "stock": 8,
+        "sold": 7
+    },
+    {
+        "id": "yugioh16",
+        "title": "Unknown",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "50,000",
+        "image": "./images/yugioh16.jpg",
+        "condition": "New",
+        "stock": 4,
+        "sold": 2
+    },
+    {
+        "id": "p1",
+        "title": "Pikachu",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "50,000",
+        "image": "./images/p1.jpg",
+        "condition": "New",
+        "stock": 6,
+        "sold": 9
+    },
+    {
+        "id": "p2",
+        "title": "MHeracross EX",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "200,000",
+        "image": "./images/p2.jpg",
+        "condition": "New",
+        "stock": 1,
+        "sold": 5
+    },
+    {
+        "id": "p3",
+        "title": "Lucario",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "150,000",
+        "image": "./images/p3.jpg",
+        "condition": "New",
+        "stock": 10,
+        "sold": 8
+    },
+    {
+        "id": "p4",
+        "title": "Dialga GX",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "300,000",
+        "image": "./images/p4.jpg",
+        "condition": "New",
+        "stock": 3,
+        "sold": 7
+    },
+    {
+        "id": "p5",
+        "title": "Unknown Pokémon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "150,000",
+        "image": "./images/p5.jpg",
+        "condition": "New",
+        "stock": 2,
+        "sold": 4
+    },
+    {
+        "id": "p6",
+        "title": "Unknown Pokémon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "150,000",
+        "image": "./images/p6.jpg",
+        "condition": "New",
+        "stock": 9,
+        "sold": 6
+    },
+    {
+        "id": "p7",
+        "title": "Inteleon",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "75,000",
+        "image": "./images/p7.jpg",
+        "condition": "New",
+        "stock": 5,
+        "sold": 2
+    },
+    {
+        "id": "p8",
+        "title": "Mewtwo",
+        "content": "Reshuffles the deck and changes the game.",
+        "money": "300,000",
+        "image": "./images/p8.jpg",
+        "condition": "New",
+        "stock": 7,
+        "sold": 10
+    }
+]
