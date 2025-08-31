@@ -1,8 +1,8 @@
 const detailcontainer = document.querySelector('.detail-container');
 
-const btnAddcart = document.getElementById('addCart');
+const btnAddCart = document.getElementById('addCart');
 
-const cartIcon = document.querySelector('.cart');
+const cartIcon = document.querySelector('.cart-item');
 
 const getDetailProduct = async () => {
     const path = new URLSearchParams(window.location.search);
@@ -15,7 +15,8 @@ const getDetailProduct = async () => {
 
     const findProductId = data.find(item => item.id.toString() === productId.toString());
 
-    detailcontainer.innerHTML = `    <div class= " detail-container container my-5">
+    detailcontainer.innerHTML = `  
+      <div class= " detail-container container my-5">
         <div class="row g-4">
             <div class="col-md-5">
                 <div class="cards-img-container shadow">
@@ -33,36 +34,37 @@ const getDetailProduct = async () => {
                                 <p><strong>Tình trạng sản phẩm:</strong> ${findProductId.condition}</p>
                                 <p><strong>Sản phẩm có sẵn:</strong> ${findProductId.stock}</p>
                                 <p><strong>Số lượng đã bán:</strong> ${findProductId.sold}</p>
-                                <div><input type="number" class="quantity-input" value="1" min="1"></div>
                             </div>
                         </div>
-                        <button id="addCart" class="btn btn-primary add-to-cart adm"><i
-                                class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+                        <button id="addCart" class="btn btn-primary add-to-cart adm"> Thêm vào giỏ hàng</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>`
 
-    btnAddcart.addEventListener('click', () => {
+    btnAddCart.addEventListener('click', () => {
         const cart = JSON.parse(localStorage.getItem('cart'));
 
-        if(cart){
+        if (cart) {
             const item = cart.findIndex(item => item.id === findProductId.id);
-            if(item !== -1){
+            if (item !== -1) {
                 cart[item].count += 1;
             } else {
-                cart.push({id: findProductId.id, count: 1});
+                cart.push({
+                    id: findProductId.id,
+                    count: 1
+                });
             }
-            localStorage.setItem('cart', JSON.stringify (cart));
-        }else {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        } else {
             const cart = [
                 {
                     id: findProductId.id,
                     count: 1
                 }
             ]
-            localStorage.setItem('cart', JSON.stringify (cart));
+            localStorage.setItem('cart', JSON.stringify(cart));
 
         }
 
@@ -70,5 +72,5 @@ const getDetailProduct = async () => {
 
     });
 }
-    getDetailProduct();
+getDetailProduct();
 
