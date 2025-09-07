@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +21,10 @@
     <link rel="stylesheet" href="./css/giohang.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- Navbar -->
- <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
         <div class="container-fluid">
             <img class="cardcollect-logo" src="./images/cardcollect2.png" alt="Cardcollect Logo">
             <a class="navbar-brand fw-bold" href="#">Cardcollect</a>
@@ -42,8 +44,10 @@
                     <li class="nav-item">
                         <a class="nav-link fw-medium" href="#">Giới thiệu</a>
                     </li>
-                    <li class=" cartIcon nav-item">
-                        <a  class=" nav-link" href="./giohang.html"><p class="cartItem">0</p><i class="fa-solid fa-cart-shopping"></i></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./giohang.html">
+                            <p class="cart-item">0</p><i class="fa-solid fa-cart-shopping"></i>
+                        </a>
                     </li>
                 </ul>
                 <form class="d-flex align-items-center me-3" role="search">
@@ -52,21 +56,21 @@
                     <button class="btn btn-outline-primary" type="submit"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                
+
             </div>
         </div>
     </nav>
 
     <!-- Cart Container -->
+    <div class="cart-header">
+        <div><input type="checkbox"></div>
+        <div>Sản phẩm</div>
+        <div>Đơn giá</div>
+        <div>Số lượng</div>
+        <div>Thành tiền</div>
+    </div>
     <div class="container my-5">
-        <div class="cart-container cards shadow">
-            <div class="cart-header">
-                <div><input type="checkbox"></div>
-                <div>Sản phẩm</div>
-                <div>Đơn giá</div>
-                <div>Số lượng</div>
-                <div>Thành tiền</div>
-            </div>
+        <div class="cart-container cards shadow">   
             <div class="cart-row cart-item">
                 <div><input type="checkbox"></div>
                 <div class="product-info">
@@ -77,11 +81,14 @@
                 <div><input type="number" id="quantity" class="quantity-input" value="1" min="1"></div>
                 <div>100.000₫</div>
             </div>
-            <div class="total-bar">
-                Tổng cộng: 100.000₫
-            </div>
-            <a href="./xacnhanthanhtoan.html" class="btn btn-primary checkout-btn"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</a>
         </div>
+        <div class="cart-summary total-bar">
+            Tổng cộng: 100.000₫
+            <a href="./xacnhanthanhtoan.html" class="btn btn-primary checkout-btn"><i
+                    class="fa-solid fa-cart-shopping"></i>
+                Mua Hàng</a>
+        </div>
+
     </div>
 
     <!-- Footer -->
@@ -109,12 +116,11 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="./js/giohang.js"></script>
+
+    <script src="./js/giohang.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
-
