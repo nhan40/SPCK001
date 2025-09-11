@@ -31,7 +31,7 @@ const getData = async () => {
 
 
     
-// filepath: g:\Prolect_JSA07\SPCK001\PhanThanhNhan_spck\index.html
+
 document.getElementById('timkiem').addEventListener('submit', async function(e) {
     e.preventDefault();
     const keyword = document.querySelector('.search-input').value.trim().toLowerCase();

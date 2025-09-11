@@ -6,32 +6,55 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 const renderCartItem = async () => {
     const response = await fetch('./data.json')
-
     const data = await response.json();
 
-    // console.log(data);
-    // console.log(cart);
-
     if (cart.length !== 0) {
-        return (cartContainer.innerHTML = cart.map(itemCart => {
-            let search = data.find(itemData => itemData.id === itemCart.id) || [];
-            console.log(search.money)
+        cartContainer.innerHTML = cart.map(itemCart => {
+            let search = data.find(itemData => itemData.id === itemCart.id) || {};
             return `
-           <div class="cart-row cart-item">
+           <div class="cart-row ccart-item">
                 <div><input type="checkbox"></div>
                 <div class="product-info">
                     <img src="${search.image}" alt="${search.title}">
                     <div class="product-name">${search.title}</div>
                 </div>
                 <div>${search.money}</div>
-                <div><input onchange="update(${search.id})" type="number" id="quantity" class="quantity-input" value="${itemCart.count}" id="${search.id}" min="1"></div>
-                <div>${search.money * itemCart.count}₫</div>
+                <div>
+                    <input 
+                        id="${search.id}" 
+                        onchange="update('${search.id}')" 
+                        type="number" 
+                        class="quantity-input" 
+                        value="${itemCart.count}" 
+                        min="1" 
+                        max="${search.stock}">
+                </div>
+                <div id="YYY">${search.money * itemCart.count}₫</div>
+                <button class="btn btn-danger" onclick="remove('${search.id}')">Xóa</button>
             </div>
             `;
-        }).join("")
-        )
+        }).join("");
+
+
+        let total = cart.reduce((sum, itemCart) => {
+            let search = data.find(itemData => itemData.id === itemCart.id) || {};
+            return sum + (parseInt(search.money, 10) * itemCart.count || 0);
+        }, 0);
+
+        document.getElementById('2010').textContent = `Tổng cộng: ${total.toLocaleString()}₫`;
     } else {
-        return container.innerHTML = `<p>Your cart is empty</p>`
+        container.innerHTML = `<p>Your cart is empty</p>`;
+        document.getElementById('2010').textContent = `Tổng cộng: 0₫`;
+    }
+}
+
+
+let remove = (id) => {
+    let searchIndex = cart.findIndex(itemCart => itemCart.id === id);
+    if (searchIndex !== -1) {
+        cart.splice(searchIndex, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCartItem();
     }
 }
 
@@ -43,7 +66,7 @@ let update = (id) => {
             let quantityElement = document.getElementById(id);
 
             if (quantityElement) {
-                cart[searchIndex].count = parseInt(quantityElement, 10) || 0;
+                cart[searchIndex].count = parseInt(quantityElement.value, 10) || 0;
 
                 localStorage.setItem('cart', JSON.stringify(cart));
 
