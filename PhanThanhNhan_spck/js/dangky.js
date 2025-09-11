@@ -1,8 +1,8 @@
 const register = (event) => {
     event.preventDefault();
     let email = document.getElementById("signup-email").value.trim();
-    let password = document.getElementById("signup-password").value.trim();
-    let confirmPassword = document.getElementById("confirm-password").value.trim();
+    let password = document.getElementById("signup-password").value;
+    let confirmPassword = document.getElementById("confirm-password").value;
 
     //biểu thức chính quy
    const lowerCaseletter = /[a-z]/g;
@@ -53,7 +53,7 @@ const register = (event) => {
         users[email] = user;
         localStorage.setItem('users', JSON.stringify(users));
         alert("Đăng ký thành công!");
-        
+        window.location.href = 'index.html'; // Chuyển về trang index
     }
 
 }

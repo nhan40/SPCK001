@@ -30,7 +30,7 @@ const renderCartItem = async () => {
                         max="${search.stock}">
                 </div>
                 <div id="YYY">${search.money * itemCart.count}₫</div>
-                <button class="btn btn-danger" onclick="remove('${search.id}')">Xóa</button>
+                <button id="DL" class="btn btn-danger" onclick="remove('${search.id}')">Xóa</button>
             </div>
             `;
         }).join("");

@@ -91,6 +91,14 @@ const getDetailProduct = async () => {
     const cartAtOpen = JSON.parse(localStorage.getItem("cart") || "[]");
     updateCartIconCount(cartAtOpen);
   } catch { /* ignore */ }
+
+  
 };
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    updateCartIconCount(cart); // đảm bảo .cart-item (nếu có) luôn hiển thị đúng
+  } catch {}
+});
 
 getDetailProduct();

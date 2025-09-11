@@ -19,7 +19,7 @@ body {
 
 .cart-header {
   display: grid;
-  grid-template-columns: 50px 2fr 1fr 1fr 1fr;
+  grid-template-columns: 50px 2fr 1fr 1fr 1fr 80px; /* Thêm 1 cột cho nút Xóa */
   background-color: #f8f9fa;
   padding: 1rem;
   font-weight: 700;
@@ -29,7 +29,7 @@ body {
 
 .cart-row {
   display: grid;
-  grid-template-columns: 50px 2fr 1fr 1fr 1fr;
+  grid-template-columns: 50px 2fr 1fr 1fr 1fr 80px; /* Thêm 1 cột cho nút Xóa */
   align-items: center;
 }
 
@@ -90,6 +90,8 @@ body {
 .checkout-btn:hover {
   background-color: #0056b3;
 }
+
+
 
 @media (max-width: 768px) {
   .cart-header, .cart-row {
