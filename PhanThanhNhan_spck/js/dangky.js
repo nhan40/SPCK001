@@ -48,7 +48,7 @@ const register = (event) => {
     let users = localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : {};
 
     if (users[email]){
-         alert("Email đã được sử dụng. Vui lòng chọn email khác.");
+         alert( "Email đã được sử dụng. Vui lòng chọn email khác.");
     }else{
         users[email] = user;
         localStorage.setItem('users', JSON.stringify(users));
